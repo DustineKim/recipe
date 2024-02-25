@@ -77,7 +77,7 @@ h2 {
 	font-family: bebas neue;
 	font-size: 30px;
 	text-align: center;
-	margin: 20px 0;
+	padding: 10px 0;
 }
 
 h3 {
@@ -163,7 +163,7 @@ nav section {
 	justify-content: center;
 }
 
-section svg {
+.links section svg {
 	display: block;
 	margin: 0 auto;
 }
@@ -192,6 +192,15 @@ ul {
 	padding: 10px;
 }
 
+ol {
+	padding: 10px;
+}
+
+ol li {
+	list-style-position: outside;
+	margin-left: 20px;
+}
+
 span {
 	font-weight: bold;
 }
@@ -201,12 +210,23 @@ img {
     margin: 0px auto;
 }
 
-li img {
-	width: 50px;
+#sides {
+	background-color: #7ABFBF;
+	padding-top: 5px;
+	padding-bottom: 20px;
 }
 
-ol li {
-	padding: 10px;
+#sides h2 {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+#sides img {
+	width: 80px;
+}
+
+#sides section {
+	padding: 20px 10px;
 }
 
 #ingredients ul {
@@ -217,11 +237,6 @@ ol li {
 #directions ol {
 	list-style: decimal;
 	list-style-position: inside;
-}
-
-#sides {
-	background-color: #7ABFBF;
-	padding-top: 5px;
 }
 
 #sides img {
@@ -275,4 +290,8 @@ svg:hover {
 .dropdown:hover .content{
 	display: inline-block;
 	background-color: white;
+}
+
+h4 {
+	font-weight: bold;
 }
