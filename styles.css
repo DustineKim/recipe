@@ -65,6 +65,8 @@ body {
 }
 
 h1 {
+	display: block;
+	z-index: 2;
 	font-family: bebas neue;
 	font-size: 40px;
 	text-align: center;
@@ -108,6 +110,21 @@ footer {
 	font-size: 20px;
 }
 
+footer p {
+	font-family: bebas neue;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+footer img {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
 p {
 	font-family: montserrat;
 	font-size: 16px;
@@ -128,6 +145,36 @@ li {
 nav {
 	font-family: montserrat;
 	font-size: 16px;
+}
+
+div {
+	justify-items: space-between;
+}
+
+.links section {
+	display: inline-block;
+	justify-items: space-between;
+	padding: 10px 0;
+}
+
+nav section {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section svg {
+	display: block;
+	margin: 0 auto;
+}
+
+section a {
+	display: block;
+	color: #EB5428;
+	text-decoration: none;
+	font-family: bebas neue;
+	width: 100px;
+	text-align: center;
 }
 
 input {
@@ -170,4 +217,62 @@ ol li {
 #directions ol {
 	list-style: decimal;
 	list-style-position: inside;
+}
+
+#sides {
+	background-color: #7ABFBF;
+	padding-top: 5px;
+}
+
+#sides img {
+	position: relative;
+    display: inline;
+    float: left;
+	padding-right: 10px;
+}
+
+#sides h3 {
+    text-align: left;
+	display: inline-block;
+}
+
+svg:hover {
+	cursor: pointer;
+}
+
+.dropdown svg {
+	background-color: #EB5428;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown {
+	display: inline-block;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+}
+
+.dropdown button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown a {
+	display: block;
+	text-decoration: none;
+}
+
+.dropdown .content {
+	display: none;
+	position: absolute;
+	min-height: 100px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.dropdown:hover .content{
+	display: inline-block;
+	background-color: white;
 }
